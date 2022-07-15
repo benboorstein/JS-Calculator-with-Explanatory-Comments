@@ -1,0 +1,59 @@
+<!-- For fixing indentation problem: File -> Preferences -> Settings -> 'Editor: Tab Size', and set to '2'. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/style.css"> <!--always put this line after fonts because of how things load-->
+    <!-- "./" means "from right here". "../" means "go up a level". And, from a site:
+      Here is all you need to know about relative file paths:
+        Starting with “/” returns to the root directory and starts there
+        Starting with “../” moves one directory backwards and starts there
+        Starting with “../../” moves two directories backwards and starts there (and so on…)
+        To move forward, just start with the first subdirectory and keep moving forward -->
+
+    <title>Frontend Masters - Project 2 - Holt's Version</title>
+  </head>
+  <body>
+    <div class="calc">
+      <section class="screen">
+        0
+      </section>
+      <section class="calc-buttons">
+        <div class="calc-row">
+          <button class="double calc-button">C</button>
+          <button class="calc-button">←</button> <!-- symbol is official one from: Start Menu -> Search -> 'Character Map', Enter -->
+          <button class="calc-button">÷</button> <!-- symbol is official one from: Start Menu -> Search -> 'Character Map', Enter -->
+        </div>
+        <div class="calc-row">
+          <button class="calc-button">7</button>
+          <button class="calc-button">8</button>
+          <button class="calc-button">9</button>
+          <button class="calc-button">×</button> <!-- symbol is official one from: Start Menu -> Search -> 'Character Map', Enter -->
+        </div>
+        <div class="calc-row">
+          <button class="calc-button">4</button>
+          <button class="calc-button">5</button>
+          <button class="calc-button">6</button>
+          <button class="calc-button">-</button> <!-- symbol is official one from: Start Menu -> Search -> 'Character Map', Enter -->
+        </div>
+        <div class="calc-row">
+          <button class="calc-button">1</button>
+          <button class="calc-button">2</button>
+          <button class="calc-button">3</button>
+          <button class="calc-button">+</button> <!-- symbol is official one from: Start Menu -> Search -> 'Character Map', Enter -->
+        </div>
+        <div class="calc-row">
+          <button class="triple calc-button">0</button>
+          <button class="calc-button">=</button> <!-- symbol is official one from: Start Menu -> Search -> 'Character Map', Enter -->
+        </div>
+      </section>
+    </div>
+
+    <!-- <script src="https://unpkg.com/vue@next"></script> -->
+    <script src="./assets/js/app.js"></script> <!-- We put this at the end because this way the HTML and CSS load before the JS. This makes the website feel faster, because if the HTML and CSS had to wait for the JS to load first, the HTML and CSS would not appear immediately. We want to avoid a "flash of unstyled content" (FOUC). -->
+  </body>
+</html>
